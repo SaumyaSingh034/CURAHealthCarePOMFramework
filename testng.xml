@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CURA HealthCare Test Suite">
+
+<listeners>
+<listener class-name = "com.healthCare.ExtentReport.ExtentReporterNG"/>
+</listeners>
+
+  <test thread-count="5" name="Test">
+    <classes>
+          <class name="com.healthCare.testCases.BaseTest"/>
+          <class name="com.healthCare.testCases.LandingPageTest"/>
+      <class name="com.healthCare.testCases.LoginPageTest"/>
+
+      <class name="com.healthCare.testCases.MakeAppointmentPageTest"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
